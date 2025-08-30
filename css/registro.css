@@ -1,0 +1,65 @@
+/* Estilos generales */
+.registro {
+    background-color: #2a265f;
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Cada campo en columna */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.campo input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Checkbox alineado */
+.check {
+    flex-direction: row;
+    align-items: center;
+}
+
+.check label {
+    font-weight: normal;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviar {
+    background-color: #00ccff;
+    color: #001f3f;
+}
+
+.cancelar {
+    background-color: gray;
+    color: white;
+}

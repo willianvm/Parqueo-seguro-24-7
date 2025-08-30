@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2; /* Gris claro */
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  background-color: #1a1a80; /* Azul oscuro */
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #1ac6ff; /* Azul claro */
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  background-image: url('../img/parking.jpg'); /* imagen ilustrativa */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  background-color: rgba(26, 26, 128, 0.6); /* Azul oscuro con transparencia */
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+}
+
+.hero h1,
+.hero p,
+.hero .cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #1ac6ff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #1ac6ff;
+  color: #1a1a80;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #1a1a80;
+  padding: 40px 20px;
+}
+
+.feature {
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+.feature-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #1ac6ff;
+}
+
+.feature h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #dddddd;
+}
+
+/* How it works */
+.how-it-works {
+  background-color: #ffffff;
+  color: #1a1a80;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.how-it-works h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 250px;
+  margin: 20px;
+}
+
+.step-number {
+  background-color: #1ac6ff;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.step h3 {
+  color: #1a1a80;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #333333;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a80;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
